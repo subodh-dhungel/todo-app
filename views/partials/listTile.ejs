@@ -1,0 +1,14 @@
+<% for(let i=0; i < listItems.length; i++){ %>
+    <div class="card mb-2 listTile">
+        <div class="card-body d-flex justify-content-evenly">
+            <div class="container container-fluid">
+                <input type="checkbox" name="check" class="form-check-input" id="listItems">
+                <span class="inline"><p contenteditable="true"><%-listItems[i].content%></p></span>
+            </div>
+            <div class="container container-fluid">
+                <a href="/delete/<%-listItems[i].id %>">delete</a>
+                <a href="/edit/<%-listItems[i].id %>">edit</a>
+            </div>
+        </div>
+    </div>
+<% } %>
