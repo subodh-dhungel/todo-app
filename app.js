@@ -101,3 +101,7 @@ app.listen(PORT, (err) => {
     console.log('Server running at port: ' + PORT);
   }
 });
+
+app.get('/done',(req,res)=>{
+  res.send('done tasks')
+})
